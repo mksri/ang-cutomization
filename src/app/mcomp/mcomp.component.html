@@ -1,0 +1,18 @@
+<h1>Angular</h1>
+
+<ul>
+  <li *ngFor= "let data of myCollec">
+    {{data}}
+  </li>
+</ul>
+<span class="glyphicon"
+[class.glyphicon-star]="isFavourite"
+[class.glyphicon-star-empty]="!isFavourite"
+(click)="onClick()">
+</span>
+
+<input type="text" #idd (keyup)="onInputClick(idd.value)">
+{{idd.value | uppercase}}
+
+
+
